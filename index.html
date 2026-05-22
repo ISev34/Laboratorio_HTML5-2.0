@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio HTML5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- HTML5 permite crear una estructura más clara y semántica usando etiquetas como header, nav, main, article, section y footer. -->
+    
+    <header>
+        <h1>Mi Página Web en HTML5</h1>
+        <p>Laboratorio sobre estructura básica, semántica y elementos HTML5.</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#semantica">Semántica</a>
+        <a href="#multimedia">Multimedia</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <main>
+        <section id="inicio">
+            <h2>Sintaxis básica de HTML</h2>
+            <p>HTML utiliza etiquetas de apertura y cierre para organizar el contenido de una página web.</p>
+            <ul>
+                <li>&lt;h1&gt; se usa para títulos principales.</li>
+                <li>&lt;p&gt; se usa para párrafos.</li>
+                <li>&lt;a&gt; se usa para enlaces.</li>
+            </ul>
+            <p>Visita <a href="https://github.com" target="_blank">GitHub</a> para conocer más sobre repositorios.</p>
+        </section>
+
+        <section id="semantica">
+            <h2>Semántica de HTML5</h2>
+
+            <article>
+                <h3>Importancia de la estructura semántica</h3>
+                <p>Las etiquetas semánticas ayudan a organizar mejor el contenido y facilitan la comprensión del sitio para navegadores, buscadores y usuarios.</p>
+            </article>
+
+            <article>
+                <h3>Ventajas de HTML5</h3>
+                <p>HTML5 mejora la estructura del código, permite integrar multimedia sin depender tanto de complementos externos y facilita el desarrollo de páginas modernas.</p>
+            </article>
+        </section>
+
+        <section id="multimedia">
+            <h2>Elementos multimedia de HTML5</h2>
+
+            <figure>
+                <img src="imagenes/ejemplo.jpg" alt="Imagen de ejemplo del laboratorio">
+                <figcaption>Ejemplo de imagen usando figure y figcaption.</figcaption>
+            </figure>
+
+            <h3>Video</h3>
+            <video controls width="400">
+                <source src="video-ejemplo.mp4" type="video/mp4">
+                Tu navegador no soporta video HTML5.
+            </video>
+
+            <h3>Audio</h3>
+            <audio controls>
+                <source src="audio-ejemplo.mp3" type="audio/mpeg">
+                Tu navegador no soporta audio HTML5.
+            </audio>
+
+            <h3>Canvas</h3>
+            <canvas id="miCanvas" width="300" height="150">
+                Tu navegador no soporta canvas.
+            </canvas>
+        </section>
+    </main>
+
+    <footer id="contacto">
+        <p>Creado por: Tu Nombre</p>
+        <p>Enlace de GitHub: pega aquí el enlace de tu repositorio</p>
+    </footer>
+</body>
+</html>
